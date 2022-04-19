@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  body{
+    background: linear-gradient(35deg, rgb(206, 81, 81),rgb(33, 185, 185));
+color:rgb(36, 29, 29);
+font-family: arial;
+}
+
+  #animacion{
+      height: 250px;
+      width: 250px;
+      margin: 0 auto;
+      background-color: red;
+      animation-name: animar;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out;
+      animation-delay: 0;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+  }
+
+
+  @keyframes animar{
+0%{
+    transform: scale(0.1);
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+
+}
+50%{
+    background-color: aqua;
+}
+  }
+
+  #transformar{
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: red;
+    animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+
+@keyframes transformar{
+    0%{
+        transform: scale(0.1);
+        background-color: rgb(0, 0, 0);
+        border-radius: 100%;
+    
+    }
+    50%{
+        background-color: aqua;
+    } 
+    100%{
+        transform: scale(.3);
+        background-color: darkblue;
+    }
+
+      }
+
+      .fondo-animado{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+      }
+
+      span.uno,
+      span.dos,
+      span.tres,
+      span.cuatro{
+          border: 0;
+          display:block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #fff;
+          animation:vuelta 7s linear infinite normal both
+
+      }
+
+      span.uno{
+          width: 100px;
+          height: 100px;
+          bottom: -100px;
+          background-color: rgb(221, 122, 122);
+      }
+
+      span.dos{
+        width: 70px;
+        height: 70px;
+        bottom: -70px;
+        background-color:rgb(33, 185, 185);
+    }
+
+    span.tres{
+        width: 50px;
+        height: 50px;
+        bottom: -50px;
+        background-color: green;
+    }
+
+    span.cuatro{
+        width: 20px;
+        height: 20px;
+        bottom: -20px;
+        background-color: blue;
+    }
+
+    @keyframes vuelta{
+from{
+    transform: rotate(0deg);
+    bottom: 0;
+    opacity: 0;
+
+}
+5%{
+    opacity: 1;
+}
+60%{
+    opacity: 1;
+
+}
+to{
+    transform: rotate(360deg);
+    bottom: calc(100% + 100px);
+    opacity: 0;
+}
+
+    }
+
+    .fondo-animado span:nth-child(1) {
+        left: 5%;
+    }
+
+    
+    .fondo-animado span:nth-child(2) {
+        left: 50%;
+    }
+   
+    
+    .fondo-animado span:nth-child(3) {
+        left: 35%;
+    }
+
+    .fondo-animado span:nth-child(4) {
+        left: 75%;
+    }
+
+    
+    .fondo-animado span:nth-child(5) {
+        left: 25%;
+    }
+   
+    
+    .fondo-animado span:nth-child(6) {
+        left: 85%;
+    }
+
+    .fondo-animado span:nth-child(7) {
+        left: 90%;
+    }
+
+    
+    .fondo-animado span:nth-child(8) {
+        left: 65%;
+    }
+   
+    
+    .fondo-animado span:nth-child(9) {
+        left: 60%;
+    }
+
+    .fondo-animado span:nth-child(10) {
+        left: 75%;
+    }
+
+    
+    .fondo-animado span:nth-child(11) {
+        left: 10%;
+    }
+   
+    
+    .fondo-animado span:nth-child(12) {
+        left: 45%;
+    }
